@@ -1,0 +1,43 @@
+footer {
+    background-image: url(/assets/imgs/fundo-rodape.png);  
+    grid-template-areas:
+      "TextoCopyright LogoRodape .";
+    padding: 1rem 2rem;    
+}
+
+.RodapeContainer{
+  text-align: center;
+  color: white;
+}
+  
+.TextoCopyright {
+  justify-self: center;
+  grid-area: TextoCopyright;
+}
+
+.LogoRodape {
+  justify-self: center;
+  grid-area: LogoRodape;
+}
+
+footer small {
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .cabecalho .logo {
+    padding: 2rem;
+  }
+
+  .cabecalho p {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
