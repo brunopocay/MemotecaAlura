@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PensamentoService } from 'src/app/services/pensamento.service';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+""
 @Component({
   selector: 'app-criar-pensamento',
   templateUrl: './criar-pensamento.component.html',
@@ -30,7 +30,7 @@ export class CriarPensamentoComponent implements OnInit {
     }
 
     criarPensamento(){
-      this.service.create(this.pensamento).subscribe(() => this.router.navigate(['/Pensamentos']));
+      this.service.create(this.formulario.value).subscribe(() => this.router.navigate(['/Pensamentos']));
       
       // setTimeout(() => {
       //   window.location.reload()
