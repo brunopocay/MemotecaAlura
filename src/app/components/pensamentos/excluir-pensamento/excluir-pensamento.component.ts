@@ -29,9 +29,9 @@ export class ExcluirPensamentoComponent implements OnInit {
     if(this.pensamento.id){
         this.service.delete(this.pensamento.id).subscribe(() => this.router.navigate(['/Pensamentos']));        
     }
-    setTimeout(() => {
-        window.location.reload()
-    },50);
+    // setTimeout(() => {
+    //     window.location.reload()
+    // },50);
   }
 
   cancelar(){

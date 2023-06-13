@@ -25,9 +25,9 @@ export class CriarPensamentoComponent implements OnInit {
     criarPensamento(){
       this.service.create(this.pensamento).subscribe(() => this.router.navigate(['/Pensamentos']));
       
-      setTimeout(() => {
-        window.location.reload()
-      },50);  
+      // setTimeout(() => {
+      //   window.location.reload()
+      // },50);  
     }
 
     cancelar(){

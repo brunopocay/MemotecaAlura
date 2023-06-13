@@ -28,9 +28,9 @@ export class EditarPensamentoComponent implements OnInit {
   editarPensamento(){
     this.service.edit(this.pensamento).subscribe(() => this.router.navigate(['/Pensamentos']));
 
-    setTimeout (() => {
-      window.location.reload()
-    },50);
+    // setTimeout (() => {
+    //   window.location.reload()
+    // },50);
   }
 
   cancelar(){
