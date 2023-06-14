@@ -20,11 +20,19 @@ export class PensamentoService {
   //   return this.cachedData
   // }
 
-  list(pagina: number): Observable<Pensamento[]> {  
+  list(pagina: number, filtro: string, isFavorite: boolean): Observable<Pensamento[]> {  
     
     const itensPorPagina = 6; 
 
     let params = new HttpParams().set('_page', pagina).set('_limit', itensPorPagina)
+    
+    if(filtro.trim().length > 2){
+      params = params.set('q', filtro)
+    }
+    if(isFavorite){
+      params = params.set('isFavorite', true)
+    }
+
     return this.http.get<Pensamento[]>(this.API, {params})
   }
 
@@ -35,6 +43,11 @@ export class PensamentoService {
   edit(pensamento: Pensamento): Observable<Pensamento>{
     const url = `${this.API}/${pensamento.id}`
     return this.http.put<Pensamento>(url, pensamento)
+  }
+
+  changeFavorite(pensamento: Pensamento): Observable<Pensamento>{
+    pensamento.isFavorite = !pensamento.isFavorite
+    return this.edit(pensamento)
   }
 
   delete(id: number): Observable<Pensamento>{

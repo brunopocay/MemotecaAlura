@@ -13,7 +13,8 @@ export class ExcluirPensamentoComponent implements OnInit {
   pensamento: Pensamento = {
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: '',
+    isFavorite: false
   }
 
   constructor(private service: PensamentoService, private router: Router, private route: ActivatedRoute){}

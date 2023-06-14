@@ -1,100 +1,102 @@
 {
   "pensamentos": [
     {
-      "conteudo": "Estou evoluindo a passos largos igual do Aragorn !",
-      "autoria": "Eu, euzinho, euzão",
-      "modelo": "modelo1",
-      "id": 11
-    },
-    {
       "id": 15,
       "conteudo": "Teste 3",
       "autoria": "Oloko, Bitchoooo!",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "isFavorite": true
     },
     {
       "conteudo": "Teste de inclusão 1",
       "autoria": "Bruno Pocay",
       "modelo": "modelo1",
-      "id": 17
+      "id": 17,
+      "isFavorite": true
     },
     {
       "conteudo": "Teste de inclusão 2",
       "autoria": "Bruno Pocay",
       "modelo": "modelo3",
-      "id": 18
-    },
-    {
-      "id": 19,
-      "conteudo": "Teste de edição ",
-      "autoria": "ana",
-      "modelo": "modelo2"
+      "id": 18,
+      "isFavorite": false
     },
     {
       "id": 20,
       "conteudo": "Teste de lowercase Regex",
       "autoria": "Bruno Pocay",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "isFavorite": true
     },
     {
       "conteudo": "teste 2",
       "autoria": "Bruno Pocay",
       "modelo": "modelo3",
-      "id": 21
+      "id": 21,
+      "isFavorite": false
     },
     {
       "conteudo": "Teste 3",
       "autoria": "Bruno Pocay",
       "modelo": "modelo1",
-      "id": 22
+      "id": 22,
+      "isFavorite": false
     },
     {
       "conteudo": "teste 4",
       "autoria": "Bruno",
       "modelo": "modelo1",
-      "id": 23
+      "id": 23,
+      "isFavorite": true
     },
     {
       "conteudo": "teste 5",
       "autoria": "Bruno Pocay",
       "modelo": "modelo1",
-      "id": 24
+      "id": 24,
+      "isFavorite": false
     },
     {
       "conteudo": "teste",
       "autoria": "ana",
       "modelo": "modelo1",
-      "id": 25
+      "id": 25,
+      "isFavorite": false
     },
     {
       "conteudo": "teste 6",
       "autoria": "ana",
       "modelo": "modelo1",
-      "id": 26
+      "id": 26,
+      "isFavorite": true
     },
     {
       "conteudo": "Teste de exclusão 3",
       "autoria": "teste",
       "modelo": "modelo1",
-      "id": 27
+      "id": 27,
+      "isFavorite": false
     },
     {
       "conteudo": "Teste de exclusão 3",
       "autoria": "Bruno Pocay",
       "modelo": "modelo2",
-      "id": 28
+      "id": 28,
+      "isFavorite": true
     },
     {
       "conteudo": "Uga Uga",
       "autoria": "bruno",
       "modelo": "modelo2",
-      "id": 29
+      "id": 29,
+      "isFavorite": true
     },
     {
       "conteudo": "Teste de exclusão 3",
       "autoria": "Bruno Pocay",
       "modelo": "modelo2",
-      "id": 30
+      "id": 30,
+      "isFavorite": false
     }
   ]
 }
